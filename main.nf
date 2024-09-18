@@ -8,7 +8,6 @@ include { NANOPLOT } from './modules/nanoplot/main'
 include { MULTIQC } from './modules/multiqc/main'
 
 // Include subworkflows
-include { QCFASTQ_NANOPLOT } from './subworkflows/nf-core/qcfastq_nanoplot'
 
 // Include workflows
 include { AMRNANOPRO } from './workflows/amrnanopro.nf'
