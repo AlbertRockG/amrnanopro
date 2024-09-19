@@ -1,0 +1,11 @@
+
+  /// MultiQC 🔍 | v1.21
+
+|           multiqc | MultiQC Version v1.25 now available!
+|           multiqc | Search path : /home/sequser/amrnanopro/work/c8/86de949b8a1bcaaf994e13c2ce7265
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 39/39  
+|    custom_content | software_versions: Found 1 sample (html)
+|          nanostat | Found 1 reports
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | MultiQC complete

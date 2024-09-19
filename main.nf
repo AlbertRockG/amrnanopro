@@ -6,6 +6,7 @@ nextflow.enable.dsl = 2 // Enable Nextflow DSL2
 include { CHOPPER } from './modules/chopper/main'
 include { NANOPLOT } from './modules/nanoplot/main'
 include { MULTIQC } from './modules/multiqc/main'
+include { CUSTOM_DUMPSOFTWAREVERSIONS } from './modules/dumpsoftwareversions/main'                                                           
 
 // Include subworkflows
 

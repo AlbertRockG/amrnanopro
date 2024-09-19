@@ -1,0 +1,126 @@
+Sep-19 03:05:19.598 [main] DEBUG nextflow.cli.Launcher - $> nextflow run main.nf --input_fastq /home/sequser/MDR_LRTI_260824/fastq_pass/barcode01/FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0.fastq.gz -profile docker --outdir ./results
+Sep-19 03:05:19.678 [main] INFO  nextflow.cli.CmdRun - N E X T F L O W  ~  version 23.04.4
+Sep-19 03:05:19.696 [main] DEBUG nextflow.plugin.PluginsFacade - Setting up plugin manager > mode=prod; embedded=false; plugins-dir=/home/sequser/.nextflow/plugins; core-plugins: nf-amazon@1.16.2,nf-azure@1.0.1,nf-codecommit@0.1.4,nf-console@1.0.5,nf-ga4gh@1.0.5,nf-google@1.7.3-patch1,nf-tower@1.5.12,nf-wave@0.8.4
+Sep-19 03:05:19.705 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Enabled plugins: []
+Sep-19 03:05:19.706 [main] INFO  org.pf4j.DefaultPluginStatusProvider - Disabled plugins: []
+Sep-19 03:05:19.710 [main] INFO  org.pf4j.DefaultPluginManager - PF4J version 3.4.1 in 'deployment' mode
+Sep-19 03:05:19.720 [main] INFO  org.pf4j.AbstractPluginManager - No plugins
+Sep-19 03:05:19.737 [main] DEBUG nextflow.config.ConfigBuilder - Found config local: /home/sequser/amrnanopro/nextflow.config
+Sep-19 03:05:19.738 [main] DEBUG nextflow.config.ConfigBuilder - Parsing config file: /home/sequser/amrnanopro/nextflow.config
+Sep-19 03:05:19.763 [main] DEBUG nextflow.config.ConfigBuilder - Applying config profile: `docker`
+Sep-19 03:05:20.872 [main] DEBUG nextflow.config.ConfigBuilder - Available config profiles: [standard, gitpod, debug, test, mamba, conda, singularity, arm, test_full, docker]
+Sep-19 03:05:20.899 [main] DEBUG nextflow.cli.CmdRun - Applied DSL=2 from script declararion
+Sep-19 03:05:20.909 [main] INFO  nextflow.cli.CmdRun - Launching `main.nf` [lethal_spence] DSL2 - revision: 08547a30e0
+Sep-19 03:05:20.910 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins default=[]
+Sep-19 03:05:20.910 [main] DEBUG nextflow.plugin.PluginsFacade - Plugins resolved requirement=[]
+Sep-19 03:05:20.916 [main] DEBUG nextflow.secret.LocalSecretsProvider - Secrets store: /home/sequser/.nextflow/secrets/store.json
+Sep-19 03:05:20.918 [main] DEBUG nextflow.secret.SecretsLoader - Discovered secrets providers: [nextflow.secret.LocalSecretsProvider@7cf78c85] - activable => nextflow.secret.LocalSecretsProvider@7cf78c85
+Sep-19 03:05:20.975 [main] DEBUG nextflow.Session - Session UUID: 44fd9174-4ce6-4d94-a664-5d0b6e445089
+Sep-19 03:05:20.975 [main] DEBUG nextflow.Session - Run name: lethal_spence
+Sep-19 03:05:20.975 [main] DEBUG nextflow.Session - Executor pool size: 16
+Sep-19 03:05:20.985 [main] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'FileTransfer' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-19 03:05:21.007 [main] DEBUG nextflow.cli.CmdRun - 
+  Version: 23.04.4 build 5881
+  Created: 25-09-2023 15:34 UTC (16:34 WAST)
+  System: Linux 6.8.0-40-generic
+  Runtime: Groovy 3.0.16 on OpenJDK 64-Bit Server VM 11.0.24+8-post-Ubuntu-1ubuntu322.04
+  Encoding: UTF-8 (UTF-8)
+  Process: 3665950@faoseq06 [127.0.1.1]
+  CPUs: 16 - Mem: 30.6 GB (676.7 MB) - Swap: 2 GB (766.2 MB)
+Sep-19 03:05:21.026 [main] DEBUG nextflow.Session - Work-dir: /home/sequser/amrnanopro/work [ext2/ext3]
+Sep-19 03:05:21.040 [main] DEBUG nextflow.executor.ExecutorFactory - Extension executors providers=[]
+Sep-19 03:05:21.048 [main] DEBUG nextflow.Session - Observer factory: DefaultObserverFactory
+Sep-19 03:05:21.075 [main] DEBUG nextflow.cache.CacheFactory - Using Nextflow cache factory: nextflow.cache.DefaultCacheFactory
+Sep-19 03:05:21.083 [main] DEBUG nextflow.util.CustomThreadPool - Creating default thread pool > poolSize: 17; maxThreads: 1000
+Sep-19 03:05:21.137 [main] DEBUG nextflow.Session - Session start
+Sep-19 03:05:21.220 [main] DEBUG nextflow.script.ScriptRunner - > Launching execution
+Sep-19 03:05:21.951 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name AMRNANOPRO:NANOPLOT_BEFORE_CHOPPER
+Sep-19 03:05:21.952 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:NANOPLOT_BEFORE_CHOPPER` matches process AMRNANOPRO:NANOPLOT_BEFORE_CHOPPER
+Sep-19 03:05:21.957 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-19 03:05:21.958 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-19 03:05:21.963 [main] DEBUG nextflow.executor.Executor - [warm up] executor > local
+Sep-19 03:05:21.966 [main] DEBUG n.processor.LocalPollingMonitor - Creating local task monitor for executor 'local' > cpus=10; memory=24 GB; capacity=16; pollInterval=100ms; dumpInterval=5m
+Sep-19 03:05:22.041 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name AMRNANOPRO:CHOPPER
+Sep-19 03:05:22.042 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:CHOPPER` matches process AMRNANOPRO:CHOPPER
+Sep-19 03:05:22.043 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-19 03:05:22.044 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-19 03:05:22.053 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_low` matches labels `process_low` for process with name AMRNANOPRO:NANOPLOT_AFTER_CHOPPER
+Sep-19 03:05:22.054 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:NANOPLOT_AFTER_CHOPPER` matches process AMRNANOPRO:NANOPLOT_AFTER_CHOPPER
+Sep-19 03:05:22.055 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-19 03:05:22.055 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-19 03:05:22.089 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name AMRNANOPRO:CUSTOM_DUMPSOFTWAREVERSIONS
+Sep-19 03:05:22.090 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-19 03:05:22.090 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-19 03:05:22.117 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withLabel:process_single` matches labels `process_single` for process with name AMRNANOPRO:MULTIQC
+Sep-19 03:05:22.118 [main] DEBUG nextflow.script.ProcessConfig - Config settings `withName:.*:MULTIQC` matches process AMRNANOPRO:MULTIQC
+Sep-19 03:05:22.119 [main] DEBUG nextflow.executor.ExecutorFactory - << taskConfig executor: null
+Sep-19 03:05:22.119 [main] DEBUG nextflow.executor.ExecutorFactory - >> processorType: 'local'
+Sep-19 03:05:22.128 [main] DEBUG nextflow.Session - Workflow process names [dsl2]: AMRNANOPRO:CUSTOM_DUMPSOFTWAREVERSIONS, AMRNANOPRO:CHOPPER, AMRNANOPRO:MULTIQC, AMRNANOPRO:NANOPLOT_AFTER_CHOPPER, NANOPLOT_BEFORE_CHOPPER, MULTIQC, CUSTOM_DUMPSOFTWAREVERSIONS, NANOPLOT_AFTER_CHOPPER, AMRNANOPRO:NANOPLOT_BEFORE_CHOPPER, CHOPPER, NANOPLOT, NANOPLOT_WITHOUT_CHOPPER
+Sep-19 03:05:22.130 [main] DEBUG nextflow.Session - Igniting dataflow network (20)
+Sep-19 03:05:22.136 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > AMRNANOPRO:NANOPLOT_BEFORE_CHOPPER
+Sep-19 03:05:22.138 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > AMRNANOPRO:CHOPPER
+Sep-19 03:05:22.140 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > AMRNANOPRO:NANOPLOT_AFTER_CHOPPER
+Sep-19 03:05:22.140 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > AMRNANOPRO:CUSTOM_DUMPSOFTWAREVERSIONS
+Sep-19 03:05:22.143 [main] DEBUG nextflow.processor.TaskProcessor - Starting process > AMRNANOPRO:MULTIQC
+Sep-19 03:05:22.143 [main] DEBUG nextflow.script.ScriptRunner - > Awaiting termination 
+Sep-19 03:05:22.144 [main] DEBUG nextflow.Session - Session await
+Sep-19 03:05:22.363 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-19 03:05:22.365 [Task submitter] INFO  nextflow.Session - [87/d4afa3] Submitted process > AMRNANOPRO:NANOPLOT_BEFORE_CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0)
+Sep-19 03:05:22.373 [Task submitter] DEBUG n.executor.local.LocalTaskHandler - Launch cmd line: /bin/bash -ue .command.run
+Sep-19 03:05:22.373 [Task submitter] INFO  nextflow.Session - [66/f949e1] Submitted process > AMRNANOPRO:CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0)
+Sep-19 03:05:22.802 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 2; name: AMRNANOPRO:CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0); status: COMPLETED; exit: 2; error: -; workDir: /home/sequser/amrnanopro/work/66/f949e185e72e77349ea6c3d7aa79ca]
+Sep-19 03:05:22.805 [Task monitor] DEBUG nextflow.processor.TaskProcessor - Handling unexpected condition for
+  task: name=AMRNANOPRO:CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0); work-dir=/home/sequser/amrnanopro/work/66/f949e185e72e77349ea6c3d7aa79ca
+  error [nextflow.exception.ProcessFailedException]: Process `AMRNANOPRO:CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0)` terminated with an error exit status (2)
+Sep-19 03:05:22.816 [Task monitor] ERROR nextflow.processor.TaskProcessor - Error executing process > 'AMRNANOPRO:CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0)'
+
+Caused by:
+  Process `AMRNANOPRO:CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0)` terminated with an error exit status (2)
+
+Command executed:
+
+  zcat \
+      -f \
+      FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0.fastq.gz | \
+  chopper \
+      --threads 2 \
+      --loglength -t 8 | \
+  gzip \
+      -9 > FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0.trimmed.fastq.gz
+  
+  cat <<-END_VERSIONS > versions.yml
+  "AMRNANOPRO:CHOPPER":
+      chopper: $(chopper --version 2>&1 | cut -d ' ' -f 2)
+  END_VERSIONS
+
+Command exit status:
+  2
+
+Command output:
+  (empty)
+
+Command error:
+  error: Found argument '--loglength' which wasn't expected, or isn't valid in this context
+  
+  	If you tried to supply `--loglength` as a value rather than a flag, use `-- --loglength`
+  
+  USAGE:
+      chopper --threads <THREADS>
+  
+  For more information try --help
+
+Work dir:
+  /home/sequser/amrnanopro/work/66/f949e185e72e77349ea6c3d7aa79ca
+
+Tip: view the complete command output by changing to the process work dir and entering the command `cat .command.out`
+Sep-19 03:05:22.821 [Task monitor] INFO  nextflow.Session - Execution cancelled -- Finishing pending tasks before exit
+Sep-19 03:05:22.823 [main] DEBUG nextflow.Session - Session await > all processes finished
+Sep-19 03:05:22.828 [Actor Thread 16] DEBUG nextflow.file.SortFileCollector - FileCollector temp dir not removed: null
+Sep-19 03:06:40.135 [Task monitor] DEBUG n.processor.TaskPollingMonitor - Task completed > TaskHandler[id: 1; name: AMRNANOPRO:NANOPLOT_BEFORE_CHOPPER (FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0); status: COMPLETED; exit: 0; error: -; workDir: /home/sequser/amrnanopro/work/87/d4afa38661e10af1747e1edc07a549]
+Sep-19 03:06:40.155 [Task monitor] DEBUG nextflow.util.ThreadPoolBuilder - Creating thread pool 'PublishDir' minSize=10; maxSize=48; workQueue=LinkedBlockingQueue[10000]; allowCoreThreadTimeout=false
+Sep-19 03:06:40.160 [main] DEBUG nextflow.Session - Session await > all barriers passed
+Sep-19 03:06:40.162 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'PublishDir' shutdown completed (hard=false)
+Sep-19 03:06:40.166 [main] DEBUG nextflow.trace.WorkflowStatsObserver - Workflow completed > WorkflowStats[succeededCount=1; failedCount=1; ignoredCount=0; cachedCount=0; pendingCount=0; submittedCount=0; runningCount=0; retriesCount=0; abortedCount=0; succeedDuration=2m 36s; failedDuration=828ms; cachedDuration=0ms;loadCpus=0; loadMemory=0; peakRunning=2; peakCpus=4; peakMemory=24 GB; ]
+Sep-19 03:06:40.276 [main] DEBUG nextflow.cache.CacheDB - Closing CacheDB done
+Sep-19 03:06:40.291 [main] DEBUG nextflow.util.ThreadPoolManager - Thread pool 'FileTransfer' shutdown completed (hard=false)
+Sep-19 03:06:40.293 [main] DEBUG nextflow.script.ScriptRunner - > Execution complete -- Goodbye

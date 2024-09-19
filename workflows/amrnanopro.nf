@@ -15,9 +15,8 @@ include { NANOPLOT as NANOPLOT_BEFORE_CHOPPER } from '../modules/nanoplot/main' 
 include { CHOPPER  } from '../modules/chopper/main'
 include { NANOPLOT as NANOPLOT_AFTER_CHOPPER } from '../modules/nanoplot/main'  //addParams( options: params.nanoplot_fastq_options )
 include { NANOPLOT as NANOPLOT_WITHOUT_CHOPPER } from '../modules/nanoplot/main'  //addParams( options: params.nanoplot_fastq_options )
-include { MULTIQC as MULTIQC_BEFORE_CHOPPER} from '../modules/multiqc/main'
-include { MULTIQC as MULTIQC_AFTER_CHOPPER} from '../modules/multiqc/main'
-include { MULTIQC as MULTIQC_WITHOUT_CHOPPER} from '../modules/multiqc/main'
+include { CUSTOM_DUMPSOFTWAREVERSIONS } from '../modules/dumpsoftwareversions/main'                                                           
+include { MULTIQC } from '../modules/multiqc/main'
 
 
 workflow AMRNANOPRO {
@@ -87,8 +86,36 @@ workflow AMRNANOPRO {
         nanoplot_txt_pre     = NANOPLOT_WITHOUT_CHOPPER.out.txt
         nanoplot_log_pre     = NANOPLOT_WITHOUT_CHOPPER.out.log
         nanoplot_version_pre = NANOPLOT_WITHOUT_CHOPPER.out.versions
+        ch_versions          = ch_versions.mix (nanoplot_version_pre.first().ifEmpty(null))
         ch_trimmed_reads     = ch_fastq
     }
+
+    //
+    // SOFTWARE_VERSIONS
+    //
+    
+
+    CUSTOM_DUMPSOFTWAREVERSIONS (
+        ch_versions.unique().collectFile(name:'collated_versions.yml')
+    )
+
+
+//
+    // MODULE: MULTIQC
+    //
+
+    ch_multiqc_files = Channel.empty()
+    ch_multiqc_files = ch_multiqc_files.mix(CUSTOM_DUMPSOFTWAREVERSIONS.out.mqc_yml.collect())
+    ch_multiqc_files = ch_multiqc_files.mix(nanoplot_txt_pre.collect{it[1]})
+
+
+    if (!skip_chopper) {
+        ch_multiqc_files = ch_multiqc_files.mix(nanoplot_txt_post.collect{it[1]})    
+        }
+
+    MULTIQC ( ch_multiqc_files.collect() )
+    ch_multiqc_report = MULTIQC.out.report
+    ch_versions = ch_versions.mix(MULTIQC.out.versions)
     
     /*
      * Emit results
@@ -98,12 +125,11 @@ workflow AMRNANOPRO {
     nanoplot_html_pre
     nanoplot_txt_pre
     nanoplot_log_pre
-    nanoplot_version_pre
     ch_trimmed_reads     // Filtered reads from Chopper
-    chopper_version
     nanoplot_png_post    // After Chopper
     nanoplot_html_post
     nanoplot_txt_post
     nanoplot_log_post
-    nanoplot_version_post
+    multiqc_report = ch_multiqc_report.toList()
+    versions = ch_versions
 }

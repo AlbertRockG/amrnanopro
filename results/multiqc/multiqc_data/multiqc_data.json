@@ -1,0 +1,640 @@
+{
+    "report_data_sources": {
+        "NanoStat": {
+            "all_sections": {
+                "before_chopperNanoStats": "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4/1/_before_chopperNanoStats.txt",
+                "after_chopperNanoStats": "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4/2/_after_chopperNanoStats.txt"
+            }
+        }
+    },
+    "report_general_stats_data": [],
+    "report_general_stats_headers": [],
+    "report_multiqc_command": "/usr/local/bin/multiqc --force .",
+    "report_plot_data": {
+        "nanostat_fastq_stats_table": {
+            "id": "nanostat_fastq_stats_table",
+            "layout": {
+                "autosize": true,
+                "colorway": [
+                    "#7cb5ec",
+                    "#434348",
+                    "#90ed7d",
+                    "#f7a35c",
+                    "#8085e9",
+                    "#f15c80",
+                    "#e4d354",
+                    "#2b908f",
+                    "#f45b5b",
+                    "#91e8e1"
+                ],
+                "font": {
+                    "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+                },
+                "height": 500,
+                "hoverlabel": {
+                    "namelength": -1
+                },
+                "margin": {
+                    "b": 40,
+                    "l": 60,
+                    "pad": 0,
+                    "r": 15,
+                    "t": 50
+                },
+                "modebar": {
+                    "activecolor": "rgba(0, 0, 0, 1)",
+                    "bgcolor": "rgba(0, 0, 0, 0)",
+                    "color": "rgba(0, 0, 0, 0.5)"
+                },
+                "paper_bgcolor": "rgba(0,0,0,0)",
+                "plot_bgcolor": "rgba(0,0,0,0)",
+                "showlegend": false,
+                "title": {
+                    "font": {
+                        "size": 20
+                    },
+                    "text": "NanoStat fastq",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": false,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,0.5)",
+                        "size": 9
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.1)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,0.5)",
+                        "size": 9
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.1)"
+                },
+                "violingap": 0,
+                "grid": {
+                    "columns": 1,
+                    "roworder": "top to bottom",
+                    "ygap": 0.4
+                }
+            },
+            "datasets": [
+                {
+                    "label": 1,
+                    "uid": "nanostat_fastq_stats_table",
+                    "dconfig": {
+                        "ylab": null
+                    },
+                    "layout": {
+                        "title": {
+                            "text": null
+                        },
+                        "xaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": null
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "yaxis": {
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "title": {
+                                "text": null
+                            },
+                            "rangemode": "normal",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        }
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "orientation": "h",
+                        "box": {
+                            "visible": true
+                        },
+                        "meanline": {
+                            "visible": true
+                        },
+                        "fillcolor": "grey",
+                        "line": {
+                            "width": 2,
+                            "color": "grey"
+                        },
+                        "opacity": 0.5,
+                        "points": false,
+                        "hoveron": "points"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "metrics": [
+                        "Median_read_length_fastq",
+                        "Mean_read_length_fastq",
+                        "Read_length_N50_fastq",
+                        "Median_read_quality_fastq",
+                        "Mean_read_quality_fastq",
+                        "Number_of_reads_fastq",
+                        "Total_bases_fastq"
+                    ],
+                    "header_by_metric": {
+                        "Median_read_length_fastq": {
+                            "title": "Median length",
+                            "description": "Median read length (bp)",
+                            "dmax": 1682.1,
+                            "dmin": 0,
+                            "suffix": " bp",
+                            "hidden": null,
+                            "modify": null,
+                            "xaxis": {
+                                "ticksuffix": " bp",
+                                "tickvals": null,
+                                "range": [
+                                    -8.410499999999999,
+                                    1690.5525524999998
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        },
+                        "Mean_read_length_fastq": {
+                            "title": "Mean length",
+                            "description": "Mean read length (bp)",
+                            "dmax": 1682.1,
+                            "dmin": 0,
+                            "suffix": " bp",
+                            "hidden": true,
+                            "modify": null,
+                            "xaxis": {
+                                "ticksuffix": " bp",
+                                "tickvals": null,
+                                "range": [
+                                    -8.410499999999999,
+                                    1690.5525524999998
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        },
+                        "Read_length_N50_fastq": {
+                            "title": "Read N50",
+                            "description": "Read length N50",
+                            "dmax": 3018.0,
+                            "dmin": 0,
+                            "suffix": " bp",
+                            "hidden": null,
+                            "modify": null,
+                            "xaxis": {
+                                "ticksuffix": " bp",
+                                "tickvals": null,
+                                "range": [
+                                    -15.09,
+                                    3033.16545
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        },
+                        "Median_read_quality_fastq": {
+                            "title": "Median Qual",
+                            "description": "Median read quality (Phred scale)",
+                            "dmax": 15.0,
+                            "dmin": 0,
+                            "suffix": "",
+                            "hidden": null,
+                            "modify": null,
+                            "xaxis": {
+                                "ticksuffix": "",
+                                "tickvals": null,
+                                "range": [
+                                    -0.075,
+                                    15.075375
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        },
+                        "Mean_read_quality_fastq": {
+                            "title": "Mean Qual",
+                            "description": "Mean read quality (Phred scale)",
+                            "dmax": 15.0,
+                            "dmin": 0,
+                            "suffix": "",
+                            "hidden": true,
+                            "modify": null,
+                            "xaxis": {
+                                "ticksuffix": "",
+                                "tickvals": null,
+                                "range": [
+                                    -0.075,
+                                    15.075375
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        },
+                        "Number_of_reads_fastq": {
+                            "title": "# Reads (K)",
+                            "description": "Number of reads (thousands)",
+                            "dmax": 0.482,
+                            "dmin": 0.0,
+                            "suffix": " K",
+                            "hidden": null,
+                            "xaxis": {
+                                "ticksuffix": " K",
+                                "tickvals": null,
+                                "range": [
+                                    -0.00241,
+                                    0.48442205
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        },
+                        "Total_bases_fastq": {
+                            "title": "Total Bases (Mb)",
+                            "description": "Total bases (millions)",
+                            "dmax": 0.799172,
+                            "dmin": 0.0,
+                            "suffix": " Mb",
+                            "hidden": null,
+                            "xaxis": {
+                                "ticksuffix": " Mb",
+                                "tickvals": null,
+                                "range": [
+                                    -0.00399586,
+                                    0.8031878393
+                                ]
+                            },
+                            "show_points": true,
+                            "show_only_outliers": false,
+                            "hoverformat": ".2f"
+                        }
+                    },
+                    "violin_values_by_sample_by_metric": {
+                        "Median_read_length_fastq": {
+                            "before_chopperNanoStats": 879.0,
+                            "after_chopperNanoStats": 884.0
+                        },
+                        "Mean_read_length_fastq": {
+                            "before_chopperNanoStats": 1658.0,
+                            "after_chopperNanoStats": 1682.1
+                        },
+                        "Read_length_N50_fastq": {
+                            "before_chopperNanoStats": 3018.0,
+                            "after_chopperNanoStats": 3018.0
+                        },
+                        "Median_read_quality_fastq": {
+                            "before_chopperNanoStats": 14.9,
+                            "after_chopperNanoStats": 15.0
+                        },
+                        "Mean_read_quality_fastq": {
+                            "before_chopperNanoStats": 13.3,
+                            "after_chopperNanoStats": 13.7
+                        },
+                        "Number_of_reads_fastq": {
+                            "before_chopperNanoStats": 0.482,
+                            "after_chopperNanoStats": 0.46
+                        },
+                        "Total_bases_fastq": {
+                            "before_chopperNanoStats": 0.799172,
+                            "after_chopperNanoStats": 0.773778
+                        }
+                    },
+                    "scatter_values_by_sample_by_metric": {
+                        "Median_read_length_fastq": {},
+                        "Mean_read_length_fastq": {},
+                        "Read_length_N50_fastq": {},
+                        "Median_read_quality_fastq": {},
+                        "Mean_read_quality_fastq": {},
+                        "Number_of_reads_fastq": {},
+                        "Total_bases_fastq": {}
+                    },
+                    "all_samples": [
+                        "after_chopperNanoStats",
+                        "before_chopperNanoStats"
+                    ],
+                    "scatter_trace_params": {
+                        "mode": "markers",
+                        "marker": {
+                            "size": 4,
+                            "color": "#0b79e6"
+                        },
+                        "showlegend": false,
+                        "hovertemplate": "<b>%{text}</b>: %{x}<extra></extra>",
+                        "hoverlabel": {
+                            "bgcolor": "white"
+                        }
+                    }
+                }
+            ],
+            "plot_type": "violin",
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [],
+            "p_active": false,
+            "l_active": false,
+            "square": null,
+            "config": {
+                "namespace": "NanoStat",
+                "table_title": "NanoStat fastq"
+            },
+            "static": true,
+            "violin_height": 70,
+            "extra_height": 63
+        },
+        "nanostat_quality_dist": {
+            "id": "nanostat_quality_dist",
+            "layout": {
+                "autosize": true,
+                "colorway": [
+                    "#7cb5ec",
+                    "#434348",
+                    "#90ed7d",
+                    "#f7a35c",
+                    "#8085e9",
+                    "#f15c80",
+                    "#e4d354",
+                    "#2b908f",
+                    "#f45b5b",
+                    "#91e8e1"
+                ],
+                "font": {
+                    "family": "'Lucida Grande', 'Open Sans', verdana, arial, sans-serif"
+                },
+                "height": 300,
+                "hoverlabel": {
+                    "namelength": -1,
+                    "bgcolor": "rgba(255, 255, 255, 0.8)",
+                    "font": {
+                        "color": "black"
+                    }
+                },
+                "margin": {
+                    "b": 65,
+                    "l": 60,
+                    "pad": 5,
+                    "r": 15,
+                    "t": 50
+                },
+                "modebar": {
+                    "activecolor": "rgba(0, 0, 0, 1)",
+                    "bgcolor": "rgba(0, 0, 0, 0)",
+                    "color": "rgba(0, 0, 0, 0.5)"
+                },
+                "paper_bgcolor": "rgba(0,0,0,0)",
+                "plot_bgcolor": "rgba(0,0,0,0)",
+                "showlegend": true,
+                "title": {
+                    "font": {
+                        "size": 20
+                    },
+                    "text": "NanoStat: Reads by quality",
+                    "x": 0.5,
+                    "xanchor": "center"
+                },
+                "xaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.05)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,1)",
+                        "size": 10
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.05)"
+                },
+                "yaxis": {
+                    "automargin": true,
+                    "color": "rgba(0,0,0,0.3)",
+                    "gridcolor": "rgba(0,0,0,0.05)",
+                    "tickfont": {
+                        "color": "rgba(0,0,0,1)",
+                        "size": 10
+                    },
+                    "zerolinecolor": "rgba(0,0,0,0.05)",
+                    "showgrid": false,
+                    "categoryorder": "trace",
+                    "type": "category"
+                },
+                "barmode": "relative",
+                "bargroupgap": 0,
+                "bargap": 0.2,
+                "legend": {
+                    "tracegroupgap": 0,
+                    "traceorder": "normal"
+                },
+                "hovermode": "y unified"
+            },
+            "datasets": [
+                {
+                    "label": 1,
+                    "uid": "nanostat_quality_dist",
+                    "dconfig": {},
+                    "layout": {
+                        "title": {
+                            "text": "NanoStat: Reads by quality"
+                        },
+                        "xaxis": {
+                            "title": {
+                                "text": "# Reads"
+                            },
+                            "hoverformat": ",.0f",
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "minallowed": 0,
+                                "maxallowed": 482
+                            }
+                        },
+                        "yaxis": {
+                            "title": null,
+                            "hoverformat": null,
+                            "ticksuffix": "",
+                            "autorangeoptions": {
+                                "clipmin": null,
+                                "clipmax": null,
+                                "minallowed": null,
+                                "maxallowed": null
+                            }
+                        },
+                        "showlegend": true
+                    },
+                    "trace_params": {
+                        "hovertemplate": "<b></b>%{meta}: <b>%{x}</b><extra></extra>",
+                        "orientation": "h",
+                        "marker": {
+                            "line": {
+                                "width": 0
+                            }
+                        },
+                        "textposition": "inside",
+                        "insidetextanchor": "start"
+                    },
+                    "pct_range": {
+                        "xaxis": {
+                            "min": 0,
+                            "max": 100
+                        },
+                        "yaxis": {
+                            "min": 0,
+                            "max": 100
+                        }
+                    },
+                    "cats": [
+                        {
+                            "name": "Reads >Q15",
+                            "data": [
+                                233,
+                                233
+                            ],
+                            "color": "0.00,0.41,0.22",
+                            "data_pct": [
+                                48.3402489626556,
+                                50.65217391304348
+                            ]
+                        },
+                        {
+                            "name": "Reads Q12-15",
+                            "data": [
+                                149,
+                                149
+                            ],
+                            "color": "0.30,0.69,0.36",
+                            "data_pct": [
+                                30.91286307053942,
+                                32.391304347826086
+                            ]
+                        },
+                        {
+                            "name": "Reads Q10-12",
+                            "data": [
+                                78,
+                                78
+                            ],
+                            "color": "0.72,0.88,0.46",
+                            "data_pct": [
+                                16.182572614107883,
+                                16.956521739130434
+                            ]
+                        },
+                        {
+                            "name": "Reads Q7-10",
+                            "data": [
+                                22,
+                                0
+                            ],
+                            "color": "1.00,1.00,0.75",
+                            "data_pct": [
+                                4.564315352697095,
+                                0.0
+                            ]
+                        }
+                    ],
+                    "samples": [
+                        "before_chopperNanoStats",
+                        "after_chopperNanoStats"
+                    ]
+                }
+            ],
+            "plot_type": "bar_graph",
+            "pct_axis_update": {
+                "ticksuffix": "%",
+                "hoverformat": ".1f"
+            },
+            "axis_controlled_by_switches": [
+                "xaxis"
+            ],
+            "p_active": false,
+            "l_active": false,
+            "square": null,
+            "config": {
+                "id": "nanostat_quality_dist",
+                "title": "NanoStat: Reads by quality",
+                "ylab": "# Reads",
+                "cpswitch_counts_label": "Number of Reads"
+            }
+        }
+    },
+    "report_saved_raw_data": {
+        "multiqc_nanostat": {
+            "before_chopperNanoStats": {
+                "Mean read length_fastq": 1658.0,
+                "Mean read quality_fastq": 13.3,
+                "Median read length_fastq": 879.0,
+                "Median read quality_fastq": 14.9,
+                "Number of reads_fastq": 482.0,
+                "Read length N50_fastq": 3018.0,
+                "STDEV read length_fastq": 2985.7,
+                "Total bases_fastq": 799172.0,
+                ">Q5_fastq": 482,
+                ">Q7_fastq": 482,
+                ">Q10_fastq": 460,
+                ">Q12_fastq": 382,
+                ">Q15_fastq": 233
+            },
+            "after_chopperNanoStats": {
+                "Mean read length_fastq": 1682.1,
+                "Mean read quality_fastq": 13.7,
+                "Median read length_fastq": 884.0,
+                "Median read quality_fastq": 15.0,
+                "Number of reads_fastq": 460.0,
+                "Read length N50_fastq": 3018.0,
+                "STDEV read length_fastq": 3030.5,
+                "Total bases_fastq": 773778.0,
+                ">Q5_fastq": 460,
+                ">Q7_fastq": 460,
+                ">Q10_fastq": 460,
+                ">Q12_fastq": 382,
+                ">Q15_fastq": 233
+            }
+        }
+    },
+    "config_analysis_dir_abs": [
+        "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4"
+    ],
+    "config_analysis_dir": [
+        "."
+    ],
+    "config_creation_date": "2024-09-19, 02:42 UTC",
+    "config_git_hash": null,
+    "config_intro_text": null,
+    "config_report_comment": null,
+    "config_report_header_info": null,
+    "config_script_path": "/usr/local/lib/python3.11/site-packages/multiqc/utils",
+    "config_short_version": "1.21",
+    "config_subtitle": null,
+    "config_title": null,
+    "config_version": "1.21",
+    "config_output_dir": "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4"
+}

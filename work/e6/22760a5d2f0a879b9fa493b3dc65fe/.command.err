@@ -1,0 +1,22 @@
+Unable to find image 'quay.io/biocontainers/multiqc:1.21--pyhdfd78af_0' locally
+1.21--pyhdfd78af_0: Pulling from biocontainers/multiqc
+93e509ffbdaf: Already exists
+820c67f471a9: Already exists
+bd9ddc54bea9: Already exists
+1591479aec4e: Pulling fs layer
+1591479aec4e: Verifying Checksum
+1591479aec4e: Download complete
+1591479aec4e: Pull complete
+Digest: sha256:ecafca93ba3346775b773bbfd6ff920ecfc259f554777576c15d3139c678311b
+Status: Downloaded newer image for quay.io/biocontainers/multiqc:1.21--pyhdfd78af_0
+
+  /// MultiQC 🔍 | v1.21
+
+|           multiqc | MultiQC Version v1.25 now available!
+|           multiqc | Search path : /home/sequser/amrnanopro/work/e6/22760a5d2f0a879b9fa493b3dc65fe
+|         searching | ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100% 9/9  
+|    custom_content | software_versions: Found 1 sample (html)
+|          nanostat | Found 1 reports
+|           multiqc | Report      : multiqc_report.html
+|           multiqc | Data        : multiqc_data
+|           multiqc | MultiQC complete
