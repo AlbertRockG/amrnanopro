@@ -2,8 +2,8 @@
     "report_data_sources": {
         "NanoStat": {
             "all_sections": {
-                "before_chopperNanoStats": "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4/1/_before_chopperNanoStats.txt",
-                "after_chopperNanoStats": "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4/2/_after_chopperNanoStats.txt"
+                "before_chopperNanoStats": "/home/sequser/amrnanopro/work/1e/b3e516dfaeaf198a5c218b3144e717/1/_before_chopperNanoStats.txt",
+                "after_chopperNanoStats": "/home/sequser/amrnanopro/work/1e/b3e516dfaeaf198a5c218b3144e717/2/_after_chopperNanoStats.txt"
             }
         }
     },
@@ -165,7 +165,7 @@
                         "Median_read_length_fastq": {
                             "title": "Median length",
                             "description": "Median read length (bp)",
-                            "dmax": 1682.1,
+                            "dmax": 2581.5,
                             "dmin": 0,
                             "suffix": " bp",
                             "hidden": null,
@@ -174,8 +174,8 @@
                                 "ticksuffix": " bp",
                                 "tickvals": null,
                                 "range": [
-                                    -8.410499999999999,
-                                    1690.5525524999998
+                                    -12.9075,
+                                    2594.4720375
                                 ]
                             },
                             "show_points": true,
@@ -185,7 +185,7 @@
                         "Mean_read_length_fastq": {
                             "title": "Mean length",
                             "description": "Mean read length (bp)",
-                            "dmax": 1682.1,
+                            "dmax": 2581.5,
                             "dmin": 0,
                             "suffix": " bp",
                             "hidden": true,
@@ -194,8 +194,8 @@
                                 "ticksuffix": " bp",
                                 "tickvals": null,
                                 "range": [
-                                    -8.410499999999999,
-                                    1690.5525524999998
+                                    -12.9075,
+                                    2594.4720375
                                 ]
                             },
                             "show_points": true,
@@ -205,7 +205,7 @@
                         "Read_length_N50_fastq": {
                             "title": "Read N50",
                             "description": "Read length N50",
-                            "dmax": 3018.0,
+                            "dmax": 6204.0,
                             "dmin": 0,
                             "suffix": " bp",
                             "hidden": null,
@@ -214,8 +214,8 @@
                                 "ticksuffix": " bp",
                                 "tickvals": null,
                                 "range": [
-                                    -15.09,
-                                    3033.16545
+                                    -31.02,
+                                    6235.1751
                                 ]
                             },
                             "show_points": true,
@@ -225,7 +225,7 @@
                         "Median_read_quality_fastq": {
                             "title": "Median Qual",
                             "description": "Median read quality (Phred scale)",
-                            "dmax": 15.0,
+                            "dmax": 15.4,
                             "dmin": 0,
                             "suffix": "",
                             "hidden": null,
@@ -234,8 +234,8 @@
                                 "ticksuffix": "",
                                 "tickvals": null,
                                 "range": [
-                                    -0.075,
-                                    15.075375
+                                    -0.077,
+                                    15.477385
                                 ]
                             },
                             "show_points": true,
@@ -245,7 +245,7 @@
                         "Mean_read_quality_fastq": {
                             "title": "Mean Qual",
                             "description": "Mean read quality (Phred scale)",
-                            "dmax": 15.0,
+                            "dmax": 15.4,
                             "dmin": 0,
                             "suffix": "",
                             "hidden": true,
@@ -254,8 +254,8 @@
                                 "ticksuffix": "",
                                 "tickvals": null,
                                 "range": [
-                                    -0.075,
-                                    15.075375
+                                    -0.077,
+                                    15.477385
                                 ]
                             },
                             "show_points": true,
@@ -265,7 +265,7 @@
                         "Number_of_reads_fastq": {
                             "title": "# Reads (K)",
                             "description": "Number of reads (thousands)",
-                            "dmax": 0.482,
+                            "dmax": 15.655000000000001,
                             "dmin": 0.0,
                             "suffix": " K",
                             "hidden": null,
@@ -273,8 +273,8 @@
                                 "ticksuffix": " K",
                                 "tickvals": null,
                                 "range": [
-                                    -0.00241,
-                                    0.48442205
+                                    -0.07827500000000001,
+                                    15.733666375
                                 ]
                             },
                             "show_points": true,
@@ -284,7 +284,7 @@
                         "Total_bases_fastq": {
                             "title": "Total Bases (Mb)",
                             "description": "Total bases (millions)",
-                            "dmax": 0.799172,
+                            "dmax": 40.064276,
                             "dmin": 0.0,
                             "suffix": " Mb",
                             "hidden": null,
@@ -292,8 +292,8 @@
                                 "ticksuffix": " Mb",
                                 "tickvals": null,
                                 "range": [
-                                    -0.00399586,
-                                    0.8031878393
+                                    -0.20032138,
+                                    40.2655989869
                                 ]
                             },
                             "show_points": true,
@@ -303,32 +303,32 @@
                     },
                     "violin_values_by_sample_by_metric": {
                         "Median_read_length_fastq": {
-                            "before_chopperNanoStats": 879.0,
-                            "after_chopperNanoStats": 884.0
+                            "before_chopperNanoStats": 1062.0,
+                            "after_chopperNanoStats": 1079.0
                         },
                         "Mean_read_length_fastq": {
-                            "before_chopperNanoStats": 1658.0,
-                            "after_chopperNanoStats": 1682.1
+                            "before_chopperNanoStats": 2559.2,
+                            "after_chopperNanoStats": 2581.5
                         },
                         "Read_length_N50_fastq": {
-                            "before_chopperNanoStats": 3018.0,
-                            "after_chopperNanoStats": 3018.0
+                            "before_chopperNanoStats": 6204.0,
+                            "after_chopperNanoStats": 6184.0
                         },
                         "Median_read_quality_fastq": {
-                            "before_chopperNanoStats": 14.9,
-                            "after_chopperNanoStats": 15.0
+                            "before_chopperNanoStats": 15.3,
+                            "after_chopperNanoStats": 15.4
                         },
                         "Mean_read_quality_fastq": {
-                            "before_chopperNanoStats": 13.3,
-                            "after_chopperNanoStats": 13.7
+                            "before_chopperNanoStats": 13.8,
+                            "after_chopperNanoStats": 14.1
                         },
                         "Number_of_reads_fastq": {
-                            "before_chopperNanoStats": 0.482,
-                            "after_chopperNanoStats": 0.46
+                            "before_chopperNanoStats": 15.655000000000001,
+                            "after_chopperNanoStats": 15.252
                         },
                         "Total_bases_fastq": {
-                            "before_chopperNanoStats": 0.799172,
-                            "after_chopperNanoStats": 0.773778
+                            "before_chopperNanoStats": 40.064276,
+                            "after_chopperNanoStats": 39.373149999999995
                         }
                     },
                     "scatter_values_by_sample_by_metric": {
@@ -474,7 +474,7 @@
                             "ticksuffix": "",
                             "autorangeoptions": {
                                 "minallowed": 0,
-                                "maxallowed": 482
+                                "maxallowed": 15655
                             }
                         },
                         "yaxis": {
@@ -515,48 +515,60 @@
                         {
                             "name": "Reads >Q15",
                             "data": [
-                                233,
-                                233
+                                8610,
+                                8610
                             ],
                             "color": "0.00,0.41,0.22",
                             "data_pct": [
-                                48.3402489626556,
-                                50.65217391304348
+                                54.99840306611306,
+                                56.451612903225815
                             ]
                         },
                         {
                             "name": "Reads Q12-15",
                             "data": [
-                                149,
-                                149
+                                4978,
+                                4978
                             ],
                             "color": "0.30,0.69,0.36",
                             "data_pct": [
-                                30.91286307053942,
-                                32.391304347826086
+                                31.798147556691152,
+                                32.63834251245738
                             ]
                         },
                         {
                             "name": "Reads Q10-12",
                             "data": [
-                                78,
-                                78
+                                1664,
+                                1664
                             ],
                             "color": "0.72,0.88,0.46",
                             "data_pct": [
-                                16.182572614107883,
-                                16.956521739130434
+                                10.62919195145321,
+                                10.910044584316811
                             ]
                         },
                         {
                             "name": "Reads Q7-10",
                             "data": [
-                                22,
+                                402,
                                 0
                             ],
                             "color": "1.00,1.00,0.75",
                             "data_pct": [
-                                4.564315352697095,
+                                2.567869690194826,
+                                0.0
+                            ]
+                        },
+                        {
+                            "name": "Reads Q5-7",
+                            "data": [
+                                1,
+                                0
+                            ],
+                            "color": "0.99,0.75,0.44",
+                            "data_pct": [
+                                0.0063877355477483235,
                                 0.0
                             ]
                         }
@@ -589,44 +601,44 @@
     "report_saved_raw_data": {
         "multiqc_nanostat": {
             "before_chopperNanoStats": {
-                "Mean read length_fastq": 1658.0,
-                "Mean read quality_fastq": 13.3,
-                "Median read length_fastq": 879.0,
-                "Median read quality_fastq": 14.9,
-                "Number of reads_fastq": 482.0,
-                "Read length N50_fastq": 3018.0,
-                "STDEV read length_fastq": 2985.7,
-                "Total bases_fastq": 799172.0,
-                ">Q5_fastq": 482,
-                ">Q7_fastq": 482,
-                ">Q10_fastq": 460,
-                ">Q12_fastq": 382,
-                ">Q15_fastq": 233
+                "Mean read length_fastq": 2559.2,
+                "Mean read quality_fastq": 13.8,
+                "Median read length_fastq": 1062.0,
+                "Median read quality_fastq": 15.3,
+                "Number of reads_fastq": 15655.0,
+                "Read length N50_fastq": 6204.0,
+                "STDEV read length_fastq": 4873.4,
+                "Total bases_fastq": 40064276.0,
+                ">Q5_fastq": 15655,
+                ">Q7_fastq": 15654,
+                ">Q10_fastq": 15252,
+                ">Q12_fastq": 13588,
+                ">Q15_fastq": 8610
             },
             "after_chopperNanoStats": {
-                "Mean read length_fastq": 1682.1,
-                "Mean read quality_fastq": 13.7,
-                "Median read length_fastq": 884.0,
-                "Median read quality_fastq": 15.0,
-                "Number of reads_fastq": 460.0,
-                "Read length N50_fastq": 3018.0,
-                "STDEV read length_fastq": 3030.5,
-                "Total bases_fastq": 773778.0,
-                ">Q5_fastq": 460,
-                ">Q7_fastq": 460,
-                ">Q10_fastq": 460,
-                ">Q12_fastq": 382,
-                ">Q15_fastq": 233
+                "Mean read length_fastq": 2581.5,
+                "Mean read quality_fastq": 14.1,
+                "Median read length_fastq": 1079.0,
+                "Median read quality_fastq": 15.4,
+                "Number of reads_fastq": 15252.0,
+                "Read length N50_fastq": 6184.0,
+                "STDEV read length_fastq": 4878.5,
+                "Total bases_fastq": 39373150.0,
+                ">Q5_fastq": 15252,
+                ">Q7_fastq": 15252,
+                ">Q10_fastq": 15252,
+                ">Q12_fastq": 13588,
+                ">Q15_fastq": 8610
             }
         }
     },
     "config_analysis_dir_abs": [
-        "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4"
+        "/home/sequser/amrnanopro/work/1e/b3e516dfaeaf198a5c218b3144e717"
     ],
     "config_analysis_dir": [
         "."
     ],
-    "config_creation_date": "2024-09-19, 02:42 UTC",
+    "config_creation_date": "2024-09-20, 20:49 UTC",
     "config_git_hash": null,
     "config_intro_text": null,
     "config_report_comment": null,
@@ -636,5 +648,5 @@
     "config_subtitle": null,
     "config_title": null,
     "config_version": "1.21",
-    "config_output_dir": "/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4"
+    "config_output_dir": "/home/sequser/amrnanopro/work/1e/b3e516dfaeaf198a5c218b3144e717"
 }

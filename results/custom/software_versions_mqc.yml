@@ -12,10 +12,10 @@ data: "<style>\n#nf-core-versions tbody:nth-child(even) {\n    background-color:
   \ <td><samp>nanoplot</samp></td>\n    <td><samp>1.41.6</samp></td>\n</tr>\n\n</tbody>\n\
   <tbody>\n<tr>\n    <td><samp>Workflow</samp></td>\n    <td><samp>Nextflow</samp></td>\n\
   \    <td><samp>23.04.4</samp></td>\n</tr>\n\n<tr>\n    <td><samp></samp></td>\n\
-  \    <td><samp>amrgenopro</samp></td>\n    <td><samp>1.0dev</samp></td>\n</tr>\n\
+  \    <td><samp>amrnanopro</samp></td>\n    <td><samp>1.0dev</samp></td>\n</tr>\n\
   \n</tbody>\n</table>"
 description: are collected at run time from the software output.
 id: software_versions
 plot_type: html
-section_href: https://github.com/amrgenopro
-section_name: amrgenopro Software Versions
+section_href: https://github.com/amrnanopro
+section_name: amrnanopro Software Versions

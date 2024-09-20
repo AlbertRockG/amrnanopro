@@ -1,3 +1,0 @@
-Module	Section	Sample Name	Source
-NanoStat	all_sections	before_chopperNanoStats	/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4/1/_before_chopperNanoStats.txt
-NanoStat	all_sections	after_chopperNanoStats	/home/sequser/amrnanopro/work/49/fb31cb984307a8bc2f492ef01643b4/2/_after_chopperNanoStats.txt

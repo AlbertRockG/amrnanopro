@@ -1,2 +1,0 @@
-Module	Section	Sample Name	Source
-NanoStat	all_sections	NanoStats	/home/sequser/amrnanopro/work/e6/22760a5d2f0a879b9fa493b3dc65fe/2/NanoStats.txt

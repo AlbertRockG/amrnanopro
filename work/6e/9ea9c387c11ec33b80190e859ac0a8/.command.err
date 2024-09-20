@@ -1,8 +1,0 @@
-error: Found argument '--loglength' which wasn't expected, or isn't valid in this context
-
-	If you tried to supply `--loglength` as a value rather than a flag, use `-- --loglength`
-
-USAGE:
-    chopper --threads <THREADS>
-
-For more information try --help

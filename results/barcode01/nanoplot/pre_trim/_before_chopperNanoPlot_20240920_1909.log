@@ -1,0 +1,24 @@
+2024-09-20 19:09:56,408 NanoPlot 1.41.6 started with arguments Namespace(threads=2, verbose=False, store=False, raw=False, huge=False, outdir='.', no_static=False, prefix='_before_chopper', tsv_stats=False, info_in_report=False, maxlength=None, minlength=None, drop_outliers=False, downsample=None, loglength=False, percentqual=False, alength=False, minqual=None, runtime_until=None, readtype='1D', barcoded=False, no_supplementary=False, color='#4CB391', colormap='Greens', format=['png'], plots=['kde', 'dot'], legacy=None, listcolors=False, listcolormaps=False, no_N50=False, N50=False, title=None, font_scale=1, dpi=100, hide_stats=False, fastq=['barcode01.fastq.gz'], fasta=None, fastq_rich=None, fastq_minimal=None, summary=None, bam=None, ubam=None, cram=None, pickle=None, feather=None, path='./_before_chopper')
+2024-09-20 19:09:56,408 Python version is: 3.10.12 | packaged by conda-forge | (main, Jun 23 2023, 22:40:32) [GCC 12.3.0]
+2024-09-20 19:09:56,431 Nanoget: Starting to collect statistics from plain fastq file.
+2024-09-20 19:09:56,431 Nanoget: Decompressing gzipped fastq barcode01.fastq.gz
+2024-09-20 19:09:59,101 Reduced DataFrame memory usage from 0.2389984130859375Mb to 0.2389984130859375Mb
+2024-09-20 19:09:59,109 Nanoget: Gathered all metrics of 15655 reads
+2024-09-20 19:09:59,127 Calculated statistics
+2024-09-20 19:09:59,128 Using sequenced read lengths for plotting.
+2024-09-20 19:09:59,130 NanoPlot:  Valid color #4CB391.
+2024-09-20 19:09:59,130 NanoPlot:  Valid colormap Greens.
+2024-09-20 19:09:59,132 NanoPlot:  Creating length plots for Read length.
+2024-09-20 19:09:59,132 NanoPlot:  Using 15655 reads maximum of 104611bp.
+2024-09-20 19:10:02,042 Saved ./_before_chopperWeightedHistogramReadlength  as png (or png for --legacy)
+2024-09-20 19:10:04,382 Saved ./_before_chopperWeightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2024-09-20 19:10:06,750 Saved ./_before_chopperNon_weightedHistogramReadlength  as png (or png for --legacy)
+2024-09-20 19:10:10,952 Saved ./_before_chopperNon_weightedLogTransformed_HistogramReadlength  as png (or png for --legacy)
+2024-09-20 19:10:19,206 Saved ./_before_chopperYield_By_Length  as png (or png for --legacy)
+2024-09-20 19:10:19,206 Created length plots
+2024-09-20 19:10:19,207 NanoPlot: Creating Read lengths vs Average read quality plots using 15655 reads.
+2024-09-20 19:10:22,686 Saved ./_before_chopperLengthvsQualityScatterPlot_dot  as png (or png for --legacy)
+2024-09-20 19:10:26,419 Saved ./_before_chopperLengthvsQualityScatterPlot_kde  as png (or png for --legacy)
+2024-09-20 19:10:26,419 Created LengthvsQual plot
+2024-09-20 19:10:26,419 Writing html report.
+2024-09-20 19:10:26,446 Finished!

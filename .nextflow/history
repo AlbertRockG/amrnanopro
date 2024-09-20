@@ -15,3 +15,11 @@
 2024-09-19 03:12:09	1m 38s	friendly_kirch	OK	08547a30e0048821d93af8a7121f4c1a	2894abe1-9a93-410d-b674-23a87c787fc2	nextflow run main.nf --input_fastq /home/sequser/MDR_LRTI_260824/fastq_pass/barcode01/FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0.fastq.gz -profile docker --outdir ./results
 2024-09-19 03:40:20	-	intergalactic_leibniz	-	08547a30e0048821d93af8a7121f4c1a	357c5cfd-9aeb-4926-8b70-acf868b1da51	nextflow run main.nf --input_fastq /home/sequser/MDR_LRTI_260824/fastq_pass/barcode01/FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0.fastq.gz -profile docker --outdir ./results
 2024-09-19 03:40:55	1m 37s	lethal_liskov	OK	08547a30e0048821d93af8a7121f4c1a	e2b1ac42-af58-4181-989b-21a8870f8002	nextflow run main.nf --input_fastq /home/sequser/MDR_LRTI_260824/fastq_pass/barcode01/FAZ50517_pass_barcode01_506ab4d4_460c1d0d_0.fastq.gz -profile docker --outdir ./results
+2024-09-20 20:09:52	47.5s	jovial_wing	OK	08547a30e0048821d93af8a7121f4c1a	62849dec-9f53-4fbe-8de8-2790abc8daae	nextflow run main.nf --input_fastq data/barcode01.fastq.gz -profile docker --outdir ./results
+2024-09-20 21:16:15	27.9s	curious_rubens	ERR	08547a30e0048821d93af8a7121f4c1a	062e3603-c142-4729-b790-5366dc5204d0	nextflow run main.nf --input_fastq data/barcode01.fastq.gz -profile test,docker --outdir ./results
+2024-09-20 21:17:24	2.2s	backstabbing_aryabhata	ERR	08547a30e0048821d93af8a7121f4c1a	41f08e84-dfd3-4c87-bb10-c9cbe90a6871	nextflow run main.nf -profile test,docker --outdir ./results
+2024-09-20 21:18:43	46.7s	kickass_noether	OK	08547a30e0048821d93af8a7121f4c1a	0f9af3e4-9e2a-41e0-aaa0-76b2d5d18843	nextflow run main.nf -profile test,docker --outdir ./results
+2024-09-20 21:36:03	3.9s	stupefied_kare	ERR	08547a30e0048821d93af8a7121f4c1a	264ec393-360e-4c92-877f-4c1d004c6d5e	nextflow run main.nf -profile test,docker --outdir ./results
+2024-09-20 21:40:40	4.5s	boring_sax	ERR	08547a30e0048821d93af8a7121f4c1a	0e068c95-a772-49c9-83cb-bd151da9f411	nextflow run main.nf -profile test,docker --outdir ./results
+2024-09-20 21:44:13	30.4s	exotic_moriondo	OK	08547a30e0048821d93af8a7121f4c1a	522641a6-592e-4a90-bbed-82c0a4ba70f8	nextflow run main.nf -profile test,docker --outdir ./results
+2024-09-20 21:49:04	44s	fervent_caravaggio	OK	08547a30e0048821d93af8a7121f4c1a	b08b7471-f889-4152-9182-f56db2e03d14	nextflow run main.nf -profile test_full,docker --outdir ./results

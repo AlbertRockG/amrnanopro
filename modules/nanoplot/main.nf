@@ -21,12 +21,12 @@ process NANOPLOT {
     task.ext.when == null || task.ext.when
 
     script:
-    def args = task.ext.args ?: ''
+    def args = task.ext.args ? "--prefix ${task.ext.args}" : ''
     def input_file = ("$ontfile".endsWith(".fastq.gz") || "$ontfile".endsWith(".fq.gz")) ? "--fastq ${ontfile}" :
         ("$ontfile".endsWith(".txt")) ? "--summary ${ontfile}" : ''
     """
     NanoPlot \\
-        -p $args \\
+        $args \\
         -t $task.cpus \\
         $input_file
 
