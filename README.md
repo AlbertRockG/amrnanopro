@@ -112,7 +112,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ### MultiQC Report Overview
 
-![MultiQC Report Screenshot](assets/multiqc_report_screenshot_version_and_reads_length)
+![MultiQC Report Screenshot](assets/multiqc_report_screenshot_version_and_reads_length.png)
 
 *Figure 1: MultiQC report summarizing quality control metrics.*
 
