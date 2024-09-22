@@ -5,6 +5,8 @@
 AMRNanoPro is a Nextflow pipeline designed to analyze Nanopore sequencing data for antimicrobial resistance (AMR) detection in bacteria isolates whole genome sequencing data. It integrates quality control, filtering, and comprehensive reporting tools to facilitate rapid and accurate AMR profiling.  The next steps are to add Flye for assembly, medaka for polishing and Abricate for AMR profiling. At the end, the input processing will support directory and sample sheet for batch processing.
 This pipeline is ideal for researchers and clinicians who need a streamlined and reproducible workflow for processing Nanopore sequencing data in the context of antimicrobial resistance studies.
 
+![MultiQC Report Screenshot](https://github.com/AlbertRockG/albertrockg.github.io/blob/master/images/workflows.png)
+
 ## Links
 
 - **GitHub Repository:** [AMRNanoPro](https://github.com/AlbertRockG/amrnanopro)
