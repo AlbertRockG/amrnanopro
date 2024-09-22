@@ -24,8 +24,11 @@ jobs:
           curl -s https://get.nextflow.io | bash
           sudo mv nextflow /usr/local/bin/
 
-      - name: Run Tests
-        run: nextflow run tests/unit_tests.nf
+      - name: Run Nextflow pipeline with test_full data
+        run: nextflow run main.nf -profile test_full,docker --outdir ./results
+
+      - name: Run Nextflow pipeline with test data
+        run: nextflow run main.nf -profile test,docker --outdir ./results
 
       - name: Publish Release
         uses: softprops/action-gh-release@v1

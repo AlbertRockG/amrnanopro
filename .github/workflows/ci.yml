@@ -24,7 +24,7 @@ jobs:
           curl -s https://get.nextflow.io | bash
           sudo mv nextflow /usr/local/bin/
 
-      - name: Run Nextflow pipeline with test data
+      - name: Run Nextflow pipeline with test_full data
         run: nextflow run main.nf -profile test_full,docker --outdir ./results
 
       - name: Run Nextflow pipeline with test data
