@@ -8,9 +8,6 @@
  * Validate input parameters
  */
 
-if (!params.input_fastq) {
-    error "Parameter 'input_fastq' is required but not provided."
-}
 include { NANOPLOT as NANOPLOT_BEFORE_CHOPPER } from '../modules/nanoplot/main'  //addParams( options: params.nanoplot_fastq_options )
 include { CHOPPER  } from '../modules/chopper/main'
 include { NANOPLOT as NANOPLOT_AFTER_CHOPPER } from '../modules/nanoplot/main'  //addParams( options: params.nanoplot_fastq_options )
@@ -25,11 +22,6 @@ workflow AMRNANOPRO {
     skip_chopper
 
     main:
-    ch_fastq = Channel
-                    .fromPath(params.input_fastq, checkIfExists: true)
-                    .map { it -> tuple(file(it).getBaseName(it.name.endsWith('.gz')? 2: 1), file(it))
-                    }
-
     /*
      * FastQ Quality Checking using NanoPlot before Chopper (if skip_nanoplot is false)
      */
